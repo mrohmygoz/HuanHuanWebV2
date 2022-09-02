@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+@layer base {
+  body {
+      @apply bg-[#000000e7] text-[#f8f8f8ed]
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+      @apply font-bold
+  }
+
+  h1 {
+    @apply lg:text-5xl md:text-3xl text-xl lowercase tracking-widest font-extrabold lg:py-20 md:py-14 py-8
+  }
+
+  li {
+      @apply cursor-pointer
+  }
+
+  p {
+    @apply lg:text-lg md:text-base text-sm tracking-wide p-2 lg:leading-relaxed md:leading-relaxed leading-relaxed indent-4 text-justify
+  }
+
+  button {
+    @apply border-solid border-2 lg:p-3 md:p-2 p-1 lg:text-sm text-xs tracking-wider
+  }
+}
