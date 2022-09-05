@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import Bg from '../public/merch1.jpg'
 import Cup1 from '../public/merch-cup1.jpg'
 import Cup2 from '../public/merch-cup2.jpg'
@@ -6,8 +7,10 @@ import Water1 from '../public/merch-water1.jpg'
 import Water2 from '../public/merch-water2.jpg'
 
 export default function Merch() {
+    const linkShop = 'https://www.inuteromusic.com/pages/huanhuan';
+
     return (
-        <div className='w-full relative'>
+        <div id='merch' className='w-full relative'>
             <Image 
                 className='z-[-100]'
                 objectFit='cover'
@@ -57,9 +60,11 @@ export default function Merch() {
                     <p className='italic pb-4'>
                         CDs, vinly, cup sleeves now available
                     </p>
-                    <button className='z-40 lg:p-3 p-2 lg:text-xl md:text-base text-xs tracking-widest font-extrabold'>
-                        visit the shop
-                    </button>
+                    <Link href={linkShop}>
+                        <button className='z-40 font-extrabold'>
+                            visit the shop
+                        </button>
+                    </Link>
                 </div>
             </div>
         </div>

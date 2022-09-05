@@ -1,57 +1,84 @@
 import Image from 'next/image'
 import AboutImg from '../public/about.jpg'
+import React, { useEffect, useState } from 'react'
 
 export default function About() {
+    const [clipped, setClipped] = useState(true);
+
+    const handleClipped = function () {
+        setClipped(!clipped);
+    };
+
     return (
-        <div className='flex flex-col justify-center items-center lg:px-20 md:px-14 px-8'>
+        <div id='about' className='flex flex-col justify-center items-center lg:px-20 md:px-14 px-8'>
             <h1>
                 About
             </h1>
-            <div className='lg:pb-20 md:pb-14 pb-8'>
-                <div className='md:float-right float-none md:w-[40%] w-full lg:px-7 md:px-5'>
+            <div className={
+                clipped 
+                    ? 'relative md:h-[40vh] h-[60vh] overflow-clip ease-in-out duration-300 text-transparent bg-clip-text bg-gradient-to-b from-[#f8f8f8ed] to-transparent' 
+                    : 'ease-in-out duration-300'}>
+                
+                <div className='z-0 md:float-right float-none md:w-[40%] w-full lg:px-7 md:px-5'>
                     <Image
                         src={AboutImg}
                         style='fill'
                         objectFit='cover'
                     />
                 </div>
-
+            
                 <p>
-                    Established in 2016, Huan Huan is an indie band from Taipei, Taiwan.
-                    Since Huan Huan means “slowly” in Mandarin, warm guitar noise and slow grooving developed the music style 
-                    combined with Shoegaze, Post Rock, and Folk Rock elements. 
-                    The first EP《Huan Huan》was released in 2017. 
-                    With the releasing performance, acoustic tour, and several music festivals, 
-                    the band received lots of positive feedbacks and attention. 
-                    In 2019 the band released the second EP 《Charlie》. 
-                    The A-side song〈Charlie〉created a unique space-like vibe with loud wall of overdrive guitar. 
-                    On the other hand, 〈Indiepop〉was a 70s-like indie tune with a catchy riff and cute lyrics. 
-                    The releasing performance was held in a church in NTU and nice feedbacks and beautiful vide were well filmed. 
+                    <span className='font-bold'>緩緩 Huan Huan</span> is a Taiwanese band formed in Taipei, Taiwan in 2016.
+                    The band consists of vocalist and guitarist Coco, guitarist Myles, bassist Paul and drummer Yi Jen.
+                    Since "huan huan" means "slowly" in Mandarin, Huan Huan's music is soft yet resilient, 
+                    trying to make sounds of healing and sings for the uncertainties of life.
+                    Throughout their discographies from 2017 to 2022, their music is often described as 
+                    shoegaze, dream-pop and folk-rock.
                 </p>
 
                 <p>
-                    2020 was an important and succeed year for the band. 
-                    The debut album 《Water Can Go Anywhere》was released, 
-                    which revealed the Indie Folk and Dream Pop sides of the band. 
-                    The album has been stated as clean and pure sound with a sense of transparency. 
-                    This album was nominated by 2021 Golden Indie Music Awards as “Best New Artist”, 
-                    and 2021 Freshmusic Awards as “Best New Bands”. 
-                </p>
-                
-                <p>
-                    Although the COVID-19 pandemic made 2020~2021 a tough period for gigs oversea, 
-                    Huan Huan&#39;s music still brought them to other countries by online festivals and live sessions like exPoP!!!! in Japan, 
-                    Bangkok Music City in Thailand, Primavera Pro in Spain.
+                    In September 2017, Huan Huan introduced themselves to the world with their debut self-titled EP 
+                    and has gained attention ever since. Then in March 2019, Huan Huan returned with another two-song EP, "Charlie". 
+                    Following the shoegaze musical style from their first EP, the A-side song "Charlie"
+                    created a unique vibe by combining tender vocal lines with space-like guitar noise and strong beats.
+                    On the other hand, the other song "Indiepop" in the second EP has a vintage indie tone 
+                    with catchy guitar riffs and cute lyrics, giving the audience a hint of Huan Huan&#39;s diverse musical style
+                    in their following journey. The release party of "Charlie" was held in a church in Taiwan National University
+                    and the beautiful vibe was also well-filmed.
                 </p>
 
                 <p>
-                    In 2022, as the guitarist Myles (also from Major in Body Bear) officially joined, 
-                    they are releasing new EP 《Blue Room, Orange Man》, 
-                    which interpreted life after pandemic, 
-                    of how people spending more time in their own room and facing loneliness more directly. 
-                    By adding in classical guitar and synth bass to cozy lyrics and melodies, 
-                    Huan Huan will keep their unique sound flow to everyone&#39;s mind.  
+                    In October 2020, Huan Huan announced their debut album, "Water Can Go Anywhere", along with their first Taiwan tour in support.
+                    In this album, Huan Huan has discovered a rather clean and pure sound by using instruments like acoustic guitar,
+                    synthesizer and percussions, which was their first time revealing elements of indie-folk and dream-pop.
+                    In the title track "Water Can Go Anywhere", with water being a metaphor of freedom, 
+                    the vocalist and composer Coco expressed a complicated emotion: despite the fear and uncertainties we have in life,
+                    we are still free and able to break through ourselves to go anywhere further.
+                    Gaining even more attention and feedback since release, this album was nominated for Best New Artist by Golden Indie Music Awards 
+                    and Best New Bands by Freshmusic Awards in 2021.
                 </p>
+
+                <p>
+                    Although the pandemic had stopped artists from touring abroad during 2020 and 2021, Huan Huan&#39;s music still brought
+                    attention to the world after their debut album release. In 2021, they attended several international festivals 
+                    online such as Primavera Pro in Spain, Bangkok Music City in Thailand and exPop!!!! in Japan.
+                </p>
+
+                <p>
+                    In August 2022, Huan Huan announced their new EP, "Blue Room Orange Man", along with their new member Myles.
+                    According to vocalist and composer Coco, following their debut album, this EP had pushed further 
+                    on exploring clean, indie and folk sounds by using classical guitar, synth bass and soft melodies.
+                    Content-wise, this EP had also depicted the inner state of Coco during the pandemic: 
+                    being lonely, stuffy, and powerless while being cozy, hopeful and self-enjoyed at the same time.
+                    In September 2022, Huan Huan was invited to ASEAN Music Festival in Singapore and will do one more gig in 
+                    Kuala Lumpur, Malaysia. With their running pace gradually found, Huan Huan will keep introducing their unique sounds 
+                    in the future for sure.
+                </p>
+            </div>
+            <div onClick={handleClipped} className='lg:py-20 md:py-14 py-8'>
+                <button>
+                    {clipped ? 'show more ↓' : 'show less ↑'}
+                </button>
             </div>
         </div>
     );

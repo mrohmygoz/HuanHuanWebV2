@@ -1,34 +1,27 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-export default function Discography({title, coverImg, url}) {
+export default function Discography2({title, coverImg, url}) {
     return (
-        <div className='flex w-full'>
-            <div className='relative aspect-square w-[40%]'>
-                <Image
-                    src={coverImg} 
-                    layout='fill'
-                    objectFit='contain'
-                    alt='/' 
-                /> 
-            </div>
+        <div className='w-full flex justify-center items-center'>
+            <div className='flex md:flex-row flex-col md:w-full w-[80%]'>
+                <div className='relative aspect-square md:w-[35%]'>
+                    <Image
+                        src={coverImg} 
+                        layout='fill'
+                        objectFit='contain'
+                        alt='/' 
+                        priority='true'
+                    /> 
+                </div>
 
-            <div className='w-[5%]'></div>
-
-            <div className='md:p-1 relative flex flex-col w-[55%]'>
-                <div className='h-[45%]'>
-                    <span className='tracking-wider lg:text-3xl md:text-xl text-lg font-bold'>
+                <div className='flex flex-col md:w-[65%] justify-between md:p-1 md:pl-5 md:items-start items-center'>
+                    <span className='tracking-wider lg:text-3xl md:text-xl text-lg font-bold md:py-0 py-2'>
                         {title}
                     </span>
-                </div>
-                <div className='h-[5%]'></div>
-                <div className='h-[50%] flex flex-col justify-around'>
-                    <span className='tracking-wider font-semibold lg:text-lg md:text-base text-sm'>
-                        now available
-                    </span>
-                    <div className='flex'>
+                    <div className='md:pb-0 pb-3'>
                         <Link href={url}>
-                            <button className=''>listen</button>
+                            <button>listen →</button>
                         </Link>
                     </div>
                 </div>

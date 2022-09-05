@@ -1,12 +1,17 @@
 import Discography from '../components/Discography'
-import Blue from '../public/ep.png'
-import Water from '../public/water.jpeg'
+import Blue from '../public/ep.jpg'
+import Water from '../public/water.jpg'
 import Charlie from '../public/charlie.jpeg'
 import FisrtEp from '../public/first-ep.jpeg'
 
 export default function Music() {
+    const linkBlue = 'https://www.soundscape.net/a/28323';
+    const linkWater = 'https://linktr.ee/huanhuantw';
+    const linkCharlie = 'https://open.spotify.com/album/3qIb49x7DggdnUxuG4PLgb?si=8L6vwQQoRbKnrxsMcosCUA';
+    const linkHH = 'https://open.spotify.com/album/1WPDjlW168FU2MzDhKiLO5?si=RmT1sSp6T-6kxP4qxkGsJg';
+
     return (
-        <div className='flex flex-col justify-center items-center lg:px-20 md:px-14 px-10'>
+        <div id='music' className='flex flex-col justify-center items-center lg:px-20 md:px-14 px-10'>
             <h1>
                 Music
             </h1>
@@ -14,22 +19,22 @@ export default function Music() {
                 <Discography
                     title='Blue Room Orange Man'
                     coverImg={Blue}
-                    url='/'
+                    url={linkBlue}
                 />
                 <Discography
                     title='Water Can Go Anywhere'
                     coverImg={Water}
-                    url='/'
+                    url={linkWater}
                 />
                 <Discography
                     title='Charlie'
                     coverImg={Charlie}
-                    url='/'
+                    url={linkCharlie}
                 />
                 <Discography
                     title='Huan Huan'
                     coverImg={FisrtEp}
-                    url='/'
+                    url={linkHH}
                 />
             </div>
         </div>

@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Main2 from '../components/Main2.js'
+import Main from '../components/Main.js'
 import Music from '../components/Music.js'
 import Videos from '../components/Videos.js'
 import About from '../components/About.js'
@@ -14,7 +14,7 @@ export default function Home() {
         <meta name="description" content="Huan Huan an indie band from Taiwan." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Main2 />
+      <Main />
       <Music />
       <Videos />
       <About />
