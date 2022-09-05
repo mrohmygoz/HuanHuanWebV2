@@ -20,7 +20,7 @@ export default function Discography2({title, coverImg, url}) {
                         {title}
                     </span>
                     <div className='md:pb-0 pb-3'>
-                        <a href={url} passHref>
+                        <a href={url}>
                             <button>listen →</button>
                         </a>
                     </div>

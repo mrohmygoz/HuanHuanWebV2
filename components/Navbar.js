@@ -59,7 +59,7 @@ export default function Navbar() {
                     <a href={linkApple}><li className='mr-5'><BsApple /></li></a>
                     <a href={linkBandcamp}><li className='mr-5'><FaBandcamp /></li></a>
                 </ul>
-                <div onClick={handleNav} class='md:hidden mr-1'>
+                <div onClick={handleNav} className='md:hidden mr-1'>
                     <AiOutlineMenu className={
                         nav 
                         ? 'hidden ease-in-out duration-300' 
