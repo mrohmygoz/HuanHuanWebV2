@@ -51,13 +51,13 @@ export default function Navbar() {
                     <Link href='/#contact'><li className='ml-5 text-sm uppercase'>CONTACT</li></Link>
                 </ul>
                 <ul className='hidden md:flex'>
-                    <Link href={linkFb}><li className='mr-5'><BsFacebook /></li></Link>
-                    <Link href={linkIg}><li className='mr-5'><BsInstagram /></li></Link>
-                    <Link href={linkTwitter}><li className='mr-5'><BsTwitter /></li></Link>
-                    <Link href={linkYouTube}><li className='mr-5'><BsYoutube /></li></Link>
-                    <Link href={linkSpotify}><li className='mr-5'><BsSpotify /></li></Link>
-                    <Link href={linkApple}><li className='mr-5'><BsApple /></li></Link>
-                    <Link href={linkBandcamp}><li className='mr-5'><FaBandcamp /></li></Link>
+                    <a href={linkFb}><li className='mr-5'><BsFacebook /></li></a>
+                    <a href={linkIg}><li className='mr-5'><BsInstagram /></li></a>
+                    <a href={linkTwitter}><li className='mr-5'><BsTwitter /></li></a>
+                    <a href={linkYouTube}><li className='mr-5'><BsYoutube /></li></a>
+                    <a href={linkSpotify}><li className='mr-5'><BsSpotify /></li></a>
+                    <a href={linkApple}><li className='mr-5'><BsApple /></li></a>
+                    <a href={linkBandcamp}><li className='mr-5'><FaBandcamp /></li></a>
                 </ul>
                 <div onClick={handleNav} class='md:hidden mr-1'>
                     <AiOutlineMenu className={
@@ -87,11 +87,11 @@ export default function Navbar() {
                         <Link href='/#contact'><li className='mb-5 text-4xl uppercase'>CONTACT</li></Link>
                     </ul>
                     <ul className='flex py-5'>
-                        <Link href={linkFb}><li className='mr-5'><BsFacebook size={25}/></li></Link>
-                        <Link href={linkIg}><li className='mr-5'><BsInstagram size={25}/></li></Link>
-                        <Link href={linkTwitter}><li className='mr-5'><BsTwitter size={25}/></li></Link>
-                        <Link href={linkYouTube}><li className='mr-5'><BsYoutube size={25}/></li></Link>
-                        <Link href={linkSpotify}><li className=''><BsSpotify size={25}/></li></Link>
+                        <a href={linkFb}><li className='mr-5'><BsFacebook size={25}/></li></a>
+                        <a href={linkIg}><li className='mr-5'><BsInstagram size={25}/></li></a>
+                        <a href={linkTwitter}><li className='mr-5'><BsTwitter size={25}/></li></a>
+                        <a href={linkYouTube}><li className='mr-5'><BsYoutube size={25}/></li></a>
+                        <a href={linkSpotify}><li className=''><BsSpotify size={25}/></li></a>
                     </ul>
                 </div>
                 

@@ -37,11 +37,10 @@ export default function Videos() {
                 </div>
             </div>
             <div className='z-40 lg:pb-20 md:pb-14 pb-8 flex justify-center'>
-                <Link href={linkYoutube}>
-                    <button className='z-40'>
-                        watch more on YouTube →
-                    </button>
-                </Link>
+                <button className='z-40'>
+                    <a href={linkYoutube}>watch more on YouTube →</a>
+                </button>
+                
             </div>
         </div>
     );

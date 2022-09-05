@@ -1,29 +1,18 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import AboutImg from '../public/about.jpg'
 import React, { useEffect, useState } from 'react'
 
 export default function About() {
-    const [clipped, setClipped] = useState(true);
-
-    const handleClipped = function () {
-        setClipped(!clipped);
-    };
-
     return (
         <div id='about' className='flex flex-col justify-center items-center lg:px-20 md:px-14 px-8'>
             <h1>
                 About
             </h1>
-            <div className={
-                clipped 
-                    ? 'relative md:h-[40vh] h-[60vh] overflow-clip ease-in-out duration-300 text-transparent bg-clip-text bg-gradient-to-b from-[#f8f8f8ed] to-transparent' 
-                    : 'ease-in-out duration-300'}>
-                
-                <div className='z-0 md:float-right float-none md:w-[40%] w-full lg:px-7 md:px-5'>
+            <div className='relative md:h-[40vh] h-[60vh] overflow-clip ease-in-out duration-300 text-transparent bg-clip-text bg-gradient-to-b from-[#f8f8f8ed] to-transparent'>    
+                <div className='md:float-right float-none md:w-[40%] w-full lg:px-7 md:px-5'>
                     <Image
                         src={AboutImg}
-                        style='fill'
-                        objectFit='cover'
                     />
                 </div>
             
@@ -75,10 +64,12 @@ export default function About() {
                     in the future for sure.
                 </p>
             </div>
-            <div onClick={handleClipped} className='lg:py-20 md:py-14 py-8'>
-                <button>
-                    {clipped ? 'show more ↓' : 'show less ↑'}
-                </button>
+            <div className='lg:py-20 md:py-14 py-8'>
+                <Link href='/biography'>
+                    <button>
+                        read full bio →
+                    </button>
+                </Link>
             </div>
         </div>
     );

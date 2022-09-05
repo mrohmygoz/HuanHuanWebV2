@@ -6,9 +6,9 @@ import FisrtEp from '../public/first-ep.jpeg'
 
 export default function Music() {
     const linkBlue = 'https://www.soundscape.net/a/28323';
-    const linkWater = 'https://linktr.ee/huanhuantw';
-    const linkCharlie = 'https://open.spotify.com/album/3qIb49x7DggdnUxuG4PLgb?si=8L6vwQQoRbKnrxsMcosCUA';
-    const linkHH = 'https://open.spotify.com/album/1WPDjlW168FU2MzDhKiLO5?si=RmT1sSp6T-6kxP4qxkGsJg';
+    const linkWater = 'https://www.soundscape.net/a/26494';
+    const linkCharlie = 'https://www.soundscape.net/a/26470';
+    const linkHH = 'https://www.soundscape.net/a/26466';
 
     return (
         <div id='music' className='flex flex-col justify-center items-center lg:px-20 md:px-14 px-10'>

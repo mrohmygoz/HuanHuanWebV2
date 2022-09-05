@@ -24,7 +24,7 @@ html {
   }
 
   p {
-    @apply lg:text-lg md:text-base text-sm tracking-wide p-2 lg:leading-relaxed md:leading-relaxed leading-relaxed indent-4 text-justify
+    @apply lg:text-lg md:text-base text-sm p-2 lg:leading-relaxed md:leading-relaxed leading-relaxed indent-4 text-justify
   }
 
   button {

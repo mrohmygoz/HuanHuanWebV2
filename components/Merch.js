@@ -60,11 +60,9 @@ export default function Merch() {
                     <p className='italic pb-4'>
                         CDs, vinly, cup sleeves now available
                     </p>
-                    <Link href={linkShop}>
-                        <button className='z-40 font-extrabold'>
-                            visit the shop
-                        </button>
-                    </Link>
+                    <button className='z-40'>
+                        <a href={linkShop}>visit the shop</a>
+                    </button>
                 </div>
             </div>
         </div>
