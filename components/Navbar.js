@@ -87,11 +87,11 @@ export default function Navbar() {
                         <Link href='/#contact'><li className='mb-5 text-4xl uppercase'>CONTACT</li></Link>
                     </ul>
                     <ul className='flex py-5'>
-                        <li className='mr-5'><BsFacebook size={25}/></li>
-                        <li className='mr-5'><BsInstagram size={25}/></li>
-                        <li className='mr-5'><BsTwitter size={25}/></li>
-                        <li className='mr-5'><BsYoutube size={25}/></li>
-                        <li className=''><BsSpotify size={25}/></li>
+                        <Link href={linkFb}><li className='mr-5'><BsFacebook size={25}/></li></Link>
+                        <Link href={linkIg}><li className='mr-5'><BsInstagram size={25}/></li></Link>
+                        <Link href={linkTwitter}><li className='mr-5'><BsTwitter size={25}/></li></Link>
+                        <Link href={linkYouTube}><li className='mr-5'><BsYoutube size={25}/></li></Link>
+                        <Link href={linkSpotify}><li className=''><BsSpotify size={25}/></li></Link>
                     </ul>
                 </div>
                 
