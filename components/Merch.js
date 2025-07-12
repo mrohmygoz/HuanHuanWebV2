@@ -1,13 +1,9 @@
 import Image from 'next/image'
 import SingleMerch from './SingleMerch'
 import Bg from '../public/_winds-pic.jpg'
-import Cup1 from '../public/merch-cup1.jpg'
-import Cup2 from '../public/merch-cup2.jpg'
-import Water1 from '../public/merch-water1.jpg'
 import Water2 from '../public/merch-water2.jpg'
 import CoinBag from '../public/coin-bag.jpeg'
 import Stickers from '../public/stickers.jpeg'
-import Winds1 from '../public/winds-merch1.jpeg'
 import Winds2 from '../public/winds-merch2.jpeg'
 
 export default function Merch() {
