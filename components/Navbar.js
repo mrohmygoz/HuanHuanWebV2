@@ -37,8 +37,8 @@ export default function Navbar() {
                     ? 'fixed w-full md:h-10 h-0 z-[100] bg-[#2d2d2df3] ease-in-out duration-300'
                     : 'fixed w-full md:h-10 h-14 z-[100] bg-[#2d2d2df3] ease-in-out duration-300') 
                 : ( nav 
-                    ? 'fixed w-full md:h-20 h-0 z-[100] ease-in-out duration-300' 
-                    : 'fixed w-full md:h-20 h-14 z-[100] ease-in-out duration-300' )}>
+                    ? 'fixed w-full md:h-15 h-0 z-[100] ease-in-out duration-300' 
+                    : 'fixed w-full md:h-15 h-14 z-[100] ease-in-out duration-300' )}>
             
             {/* TOP NAV BAR */}
             <div className='flex md:justify-between justify-end items-center w-full h-full px-2'>
@@ -51,13 +51,13 @@ export default function Navbar() {
                     <Link href='/#contact'><li className='ml-5 text-sm uppercase'>CONTACT</li></Link>
                 </ul>
                 <ul className='hidden md:flex'>
-                    <a href={linkFb}><li className='mr-5'><BsFacebook /></li></a>
-                    <a href={linkIg}><li className='mr-5'><BsInstagram /></li></a>
-                    <a href={linkTwitter}><li className='mr-5'><BsTwitter /></li></a>
-                    <a href={linkYouTube}><li className='mr-5'><BsYoutube /></li></a>
-                    <a href={linkSpotify}><li className='mr-5'><BsSpotify /></li></a>
-                    <a href={linkApple}><li className='mr-5'><BsApple /></li></a>
-                    <a href={linkBandcamp}><li className='mr-5'><FaBandcamp /></li></a>
+                    <a href={linkFb} target="_blank" rel="noopener noreferrer"><li className='mr-5'><BsFacebook /></li></a>
+                    <a href={linkIg} target="_blank" rel="noopener noreferrer"><li className='mr-5'><BsInstagram /></li></a>
+                    <a href={linkTwitter} target="_blank" rel="noopener noreferrer"><li className='mr-5'><BsTwitter /></li></a>
+                    <a href={linkYouTube} target="_blank" rel="noopener noreferrer"><li className='mr-5'><BsYoutube /></li></a>
+                    <a href={linkSpotify} target="_blank" rel="noopener noreferrer"><li className='mr-5'><BsSpotify /></li></a>
+                    <a href={linkApple} target="_blank" rel="noopener noreferrer"><li className='mr-5'><BsApple /></li></a>
+                    <a href={linkBandcamp} target="_blank" rel="noopener noreferrer"><li className='mr-5'><FaBandcamp /></li></a>
                 </ul>
                 <div onClick={handleNav} className='md:hidden mr-1'>
                     <AiOutlineMenu className={
@@ -87,11 +87,11 @@ export default function Navbar() {
                         <Link href='/#contact'><li className='mb-5 text-4xl uppercase'>CONTACT</li></Link>
                     </ul>
                     <ul className='flex py-5'>
-                        <a href={linkFb}><li className='mr-5'><BsFacebook size={25}/></li></a>
-                        <a href={linkIg}><li className='mr-5'><BsInstagram size={25}/></li></a>
-                        <a href={linkTwitter}><li className='mr-5'><BsTwitter size={25}/></li></a>
-                        <a href={linkYouTube}><li className='mr-5'><BsYoutube size={25}/></li></a>
-                        <a href={linkSpotify}><li className=''><BsSpotify size={25}/></li></a>
+                        <a href={linkFb} target="_blank" rel="noopener noreferrer"><li className='mr-5'><BsFacebook size={25}/></li></a>
+                        <a href={linkIg} target="_blank" rel="noopener noreferrer"><li className='mr-5'><BsInstagram size={25}/></li></a>
+                        <a href={linkTwitter} target="_blank" rel="noopener noreferrer"><li className='mr-5'><BsTwitter size={25}/></li></a>
+                        <a href={linkYouTube} target="_blank" rel="noopener noreferrer"><li className='mr-5'><BsYoutube size={25}/></li></a>
+                        <a href={linkSpotify} target="_blank" rel="noopener noreferrer"><li className=''><BsSpotify size={25}/></li></a>
                     </ul>
                 </div>
                 
