@@ -37,8 +37,8 @@ export default function Navbar() {
                     ? 'fixed w-full md:h-10 h-0 z-[100] bg-[#2d2d2df3] ease-in-out duration-300'
                     : 'fixed w-full md:h-10 h-14 z-[100] bg-[#2d2d2df3] ease-in-out duration-300') 
                 : ( nav 
-                    ? 'fixed w-full md:h-20 h-0 z-[100] ease-in-out duration-300' 
-                    : 'fixed w-full md:h-20 h-14 z-[100] ease-in-out duration-300' )}>
+                    ? 'fixed w-full md:h-15 h-0 z-[100] ease-in-out duration-300' 
+                    : 'fixed w-full md:h-15 h-14 z-[100] ease-in-out duration-300' )}>
             
             {/* TOP NAV BAR */}
             <div className='flex md:justify-between justify-end items-center w-full h-full px-2'>

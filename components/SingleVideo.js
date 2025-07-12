@@ -2,6 +2,7 @@ export default function SingleVideo({videoUrl}) {
     return (
         <div className='w-full h-full relative aspect-video'>
             <iframe 
+                className="w-full h-full block"
                 width="100%"
                 height="100%"
                 src={videoUrl}

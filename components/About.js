@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import AboutImg from '../public/about.jpg'
-import React, { useEffect, useState } from 'react'
+import AboutImg from '../public/_TRU4884.jpeg'
 
 export default function About() {
     return (
@@ -15,54 +14,16 @@ export default function About() {
                         src={AboutImg}
                     />
                 </div>
-            
-                <p>
-                    <span className='font-bold'>緩緩 Huan Huan</span> is a Taiwanese band formed in Taipei, Taiwan in 2016.
-                    The band consists of vocalist and guitarist Coco, guitarist Myles, bassist Paul and drummer Yi Jen.
-                    Since "huan huan" means "slowly" in Mandarin, Huan Huan's music is soft yet resilient, 
-                    trying to make sounds of healing and sings for the uncertainties of life.
-                    Throughout their discographies from 2017 to 2022, their music is often described as 
-                    shoegaze, dream-pop and folk-rock.
-                </p>
 
-                <p>
-                    In September 2017, Huan Huan introduced themselves to the world with their debut self-titled EP 
-                    and has gained attention ever since. Then in March 2019, Huan Huan returned with another two-song EP, "Charlie". 
-                    Following the shoegaze musical style from their first EP, the A-side song "Charlie"
-                    created a unique vibe by combining tender vocal lines with space-like guitar noise and strong beats.
-                    On the other hand, the other song "Indiepop" in the second EP has a vintage indie tone 
-                    with catchy guitar riffs and cute lyrics, giving the audience a hint of Huan Huan&#39;s diverse musical style
-                    in their following journey. The release party of "Charlie" was held in a church in Taiwan National University
-                    and the beautiful vibe was also well-filmed.
-                </p>
+                <p>Huan Huan is an alternative pop band based in Taipei, consisting of vocalist Coco, drummer Yi Jen, bassist Stone, and guitarist Myles. Their music leans towards the slower side, blending folk and rock influences with Coco's transparent and soothing vocals. Their diverse lyrics span Mandarin, English, and Taiwanese, allowing them to connect with audiences across different cultures. Their second album, “When The Wind Came Across”, incorporates elements of Motown and Soul while also experimenting with Taiwanese lyrics for the first time in the song That Afternoon. The album delivers a golden, warm listening experience—bright yet gentle, like a quiet friend accompanying you through everyday moments. In 2025, further progress was made with the release of three singles: the Taiwanese Hokkien track “Words Unsaid”, the Mandarin single “Afraid”, and the cross-artform collaboration “Fracture — To W”. These works continue to embody a gentle core while reaching outward to explore new boundaries.</p>
 
-                <p>
-                    In October 2020, Huan Huan announced their debut album, "Water Can Go Anywhere", along with their first Taiwan tour in support.
-                    In this album, Huan Huan has discovered a rather clean and pure sound by using instruments like acoustic guitar,
-                    synthesizer and percussions, which was their first time revealing elements of indie-folk and dream-pop.
-                    In the title track "Water Can Go Anywhere", with water being a metaphor of freedom, 
-                    the vocalist and composer Coco expressed a complicated emotion: despite the fear and uncertainties we have in life,
-                    we are still free and able to break through ourselves to go anywhere further.
-                    Gaining even more attention and feedback since release, this album was nominated for Best New Artist by Golden Indie Music Awards 
-                    and Best New Bands by Freshmusic Awards in 2021.
-                </p>
+                <p>Since their formation in 2015, Huan Huan has stood out in the Mandarin music scene with their distinctive sound. In 2017, they released their debut single, “Huan Huan”. Following the release of their 2019 EP, “Charlie”, they gained attention from both domestic and international critics. Their performance at the LUCfest music festival caught the eye of overseas curators, leading to invitations to play at Motel Mozaïque in the Netherlands and MIL Festival in Portugal.</p>
 
-                <p>
-                    Although the pandemic had stopped artists from touring abroad during 2020 and 2021, Huan Huan&#39;s music still brought
-                    attention to the world after their debut album release. In 2021, they attended several international festivals 
-                    online such as Primavera Pro in Spain, Bangkok Music City in Thailand and exPop!!!! in Japan.
-                </p>
+                <p>In 2020, Huan Huan released their debut album, “Water Can Go Anywhere”, marking a shift from the post-rock and shoegaze influences of their previous EPs toward a folk-rock and dream-pop-infused healing sound. The track “I'd Better Be On Time” was featured in the Disney+ series “Small & Mighty”, and they collaborated with Sony for a live session of the song. The album also led to a physical release offer from Japan’s Inpartmaint Records and a live broadcast interview on Japan's TBS Radio. Following its release, Huan Huan was nominated for "Best New Artist" at the 2021 Golden Indie Music Awards and performed virtually at international festivals such as Primavera Pro in Spain and Bangkok Music City in Thailand.</p>
 
-                <p>
-                    In August 2022, Huan Huan announced their new EP, "Blue Room Orange Man", along with their new member Myles.
-                    According to vocalist and composer Coco, following their debut album, this EP had pushed further 
-                    on exploring clean, indie and folk sounds by using classical guitar, synth bass and soft melodies.
-                    Content-wise, this EP had also depicted the inner state of Coco during the pandemic: 
-                    being lonely, stuffy, and powerless while being cozy, hopeful and self-enjoyed at the same time.
-                    In September 2022, Huan Huan was invited to ASEAN Music Festival in Singapore and will do one more gig in 
-                    Kuala Lumpur, Malaysia. With their running pace gradually found, Huan Huan will keep introducing their unique sounds 
-                    in the future for sure.
-                </p>
+                <p>With the easing of pandemic restrictions, Huan Huan continued expanding their international presence. Their 2022 EP, “Blue Room Orange Man”, introduced classical guitar and synth bass, enriching their sound. They were invited for an exclusive interview on Malaysia’s CITY Plus Radio and performed at Singapore’s ASEAN Music Festival. In 2023, they collaborated with producer Yuchain Wang to release their second album,  “When The Wind Came Across”. The album’s fresh and airy Taiwanese lyrics resonated with listeners and received widespread acclaim. Notably, the song “No Tears” was selected as the ending theme for the Netflix series “At This Moment”. Later that year, Huan Huan made their debut on the Japanese stage at Music Power 2023 in Okinawa, where they received an enthusiastic response from the local audience.</p>
+
+                <p>In 2024, Huan Huan launched the “Huan Huan to Your Home” tour, engaging in intimate house concerts to deepen their connection with fans and explore the emotional impact of their music. Through these close interactions, they gained a profound understanding of how their music serves as a sanctuary for listeners. In April 2025, Huan Huan brought her newly released singles “Afraid” and “Words Unsaid” to the stage of Japan’s renowned music festival SYNCHRONICITY, representing Taiwan. The band also appeared on prominent radio programs such as FM802 and Asian Breeze, receiving unanimous praise from both media and listeners. May marked their first tour in China, with stops in Nanjing, Hangzhou, Shanghai, Wuhan, and Guangzhou. The heartfelt and seamless performances garnered strong word-of-mouth and growing ticket sales. In July, Huan Huan released “Fracture — To W”, a collaboration between music and literature featuring Taiwanese poet Ling Yu. The band now plans to bring these works to international stages, opening a bold new chapter.</p>
             </div>
             <div className='lg:py-20 md:py-14 py-8'>
                 <Link href='/biography'>
