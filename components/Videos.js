@@ -8,6 +8,7 @@ export default function Videos() {
     const linkLauren = 'https://www.youtube.com/embed/73TAip72II8';
     const linkOnTimeLive = 'https://www.youtube.com/embed/tLqc6bf3inY';
     const linkBlueRoomLive = 'https://www.youtube.com/embed/_qomi73prck';
+    const linkPoem = 'https://www.youtube.com/embed/nRt6djsWGdo';
 
     return(
         <div id='videos' className='w-full relative'>
@@ -25,12 +26,12 @@ export default function Videos() {
                 </h1>
                 <div className='z-40 lg:pb-20 pb-10 w-full grid md:grid-cols-3 grid-cols-1 lg:gap-10 md:gap-8 gap-6 items-center'>
                     <div className='md:col-span-2 col-span-1 w-full h-full'>
-                        <SingleVideo videoUrl={linkBlueRoomLive} />
+                        <SingleVideo videoUrl={linkPoem} />
                     </div>
                     <div className='col-span-1 w-full h-full'>
                         <div className='grid grid-cols-1 lg:gap-10 md:gap-8 gap-6'>
+                            <SingleVideo videoUrl={linkBlueRoomLive} />
                             <SingleVideo videoUrl={linkWater} />
-                            <SingleVideo videoUrl={linkLauren} />
                         </div>
                     </div>
                 </div>
